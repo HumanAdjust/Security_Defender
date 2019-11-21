@@ -4,6 +4,7 @@ var path = require('path');
 var cookieParser = require('cookie-parser');
 var logger = require('morgan');
 var session = require('express-session');
+var indexRouter = require('./routes/index');
 var app = express();
 
 // view engine setup
@@ -26,9 +27,6 @@ app.use(session({
 })); //세션 처리
 
 app.use('/', indexRouter);
-app.use('/users', usersRouter);
-app.use('/exchange', exchangeRouter);
-app.use('/admin', adminRouter);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
