@@ -10,4 +10,8 @@ router.get('/login', function (req, res) {
     res.render('../views/login.ejs');
 });
 
+router.get('/stage', function (req, res) {
+    res.render('../views/Stage.ejs');
+});
+
 module.exports = router;
