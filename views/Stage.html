@@ -5,57 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
-    <style>
- 
-        video{
-            position:absolute;
-            top: 5%;
-            right: 400px;
-
-            width: 1000px;
-            
-        }
-        
-        
-    </style>
 </head>
-
 <body>
+    <video id="movie" width="460" height="306" preload autoplay>
+        <source src="localhost : 8080 / desktop.ogg"  type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'>
+       
             
-    <video></video>
-
-    
-
-
-
-    <script>	
-            var localstream;
-            let Device;
-            navigator.getUserMedia = navigator.getUserMedia || navigator.webkitGetUserMedia || navigator.mozGetUserMedia;
-            if (navigator.getUserMedia) {
-                navigator.getUserMedia(
-                        { audio: false, video: true },
-                        function(stream) {
-                            video = document.querySelector('video');
-                            video.srcObject = stream;
-                            localstream = stream;
-                            video.onloadedmetadata = function(){
-                            video.play();
-                            
-                            };
-                        },
-                        function(err) {
-                        }
-        
-                );
-        
-            } else {
-        
-        
-            }
-        
-        
-        
-        </script>
-
+    </video>
 </html> 

@@ -2,6 +2,7 @@
 *.json
 node_modules/safe-buffer/index.js
 *.ts
+*.md
 *.js
 node_modules/morgan/LICENSE
 node_modules/express-session/node_modules/cookie/LICENSE
