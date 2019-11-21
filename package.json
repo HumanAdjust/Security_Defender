@@ -1,0 +1,20 @@
+{
+  "name": "security_defender",
+  "version": "1.0.0",
+  "description": "2019 SW Meister High School association Hackerton",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/HumanAdjust/Security_Defender.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/HumanAdjust/Security_Defender/issues"
+  },
+  "homepage": "https://github.com/HumanAdjust/Security_Defender#readme"
+}
