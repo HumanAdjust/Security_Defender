@@ -26,3 +26,16 @@ node_modules/parseurl/LICENSE
 node_modules/random-bytes/LICENSE
 node_modules/safe-buffer/LICENSE
 node_modules/uid-safe/LICENSE
+node_modules/core-util-is/float.patch
+node_modules/core-util-is/LICENSE
+node_modules/inherits/LICENSE
+node_modules/isarray/.npmignore
+node_modules/isarray/.travis.yml
+node_modules/isarray/Makefile
+node_modules/mysql/License
+node_modules/readable-stream/.travis.yml
+node_modules/readable-stream/LICENSE
+node_modules/sqlstring/LICENSE
+node_modules/string_decoder/.travis.yml
+node_modules/string_decoder/LICENSE
+node_modules/util-deprecate/LICENSE
