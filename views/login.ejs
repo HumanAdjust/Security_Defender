@@ -3,24 +3,23 @@
   <head>
     <meta charset="utf-8">
     <title></title>
-    <link rel="stylesheet" href="../public/css/login.css">
+    <link rel="stylesheet" href="css/login.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" charset="utf-8"></script>
     <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
     <script src="../public/js/login.js"></script>
 
   </head>
   <body>
+    <form action="/check_login" method="POST">
     <span class="login-form">
         <h1>Login</h1>
 
         <div class="txtb">
-          <input type="text">
-          <span data-placeholder="Username"></span>
+          <input type="text" name="username" placeholder="Username" required>
         </div>
 
         <div class="txtb">
-          <input type="password">
-          <span data-placeholder="Password"></span>
+          <input type="password" name="password" placeholder="Password" required>
         </div>
 
         <input type="submit" class="logbtn" value="Login">
@@ -29,6 +28,7 @@
           Don't have account? <a href="#">Sign up</a>
         </div>
       </span>
+      </form>
 
       <script type="text/javascript">
       $(".txtb input").on("focus",function(){
