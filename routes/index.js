@@ -12,11 +12,11 @@ var router = express.Router();
 // connection.connect();
 
 router.get('/', function(req, res){
-    res.render('../views/login.ejs');
+    res.render('../views/login.html');
 });
 
 router.get('/stage', function(req, res){
-    res.render('../views/Stage.ejs');
+    res.render('../views/Stage.html');
 });
 
 router.post('/check_login', function (req, res) {
@@ -37,10 +37,6 @@ router.post('/check_login', function (req, res) {
     // } else {
     //     res.send('<script type="text/javascript">alert("아이디와 비밀번호를 입력해주세요!"); document.location.href="/";</script>');
     // }
-});
-
-router.get('/stage', function (req, res) {
-    res.render('../views/Stage.ejs');
 });
 
 module.exports = router;
