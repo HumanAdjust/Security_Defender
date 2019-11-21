@@ -1,0 +1,12 @@
+<!--에러 페이지-->
+<style>
+    body {
+        background-color: #f3f3f3;
+    }
+</style>
+
+<body>
+    <img src="Images/help404.jpg" alt="" width="20%" style="float:left;">
+    <h1><%= error.status %> <%= message %></h1>
+    <pre style="font-size: 2px"><%= error.stack %></pre>
+</body>

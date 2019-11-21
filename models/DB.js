@@ -7,7 +7,7 @@ var connection = mysql.createConnection({
     database : 'security'
   });
   
-  connection.connect();
+connection.connect();
   
 connection.query('SELECT * from book', function(err, rows, fields) {
   if (!err)
