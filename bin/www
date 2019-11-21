@@ -4,13 +4,9 @@
  * Module dependencies.
  */
 
-var app = require('../app');
+var app = require('../server');
 var debug = require('debug')('help:server');
 var http = require('http');
-var database = require('../models/loginDB');
-var Exdatabase = require('../models/exchangeDB');
-var postdatabase = require('../models/postDB');
-//const mongocrypt = require('mongocrypt');
 
 /**
  * Get port from environment and store in Express.
@@ -26,17 +22,9 @@ app.set('port', port);
 var server = http.createServer(app);
 
 /*
- * DB 연결 함
+ * DB 연결 부분
  */
-database.connectDB();
-Exdatabase.connectDB();
-postdatabase.connectDB();
-// if (mongocrypt.db.isConnected()) {
-//   // Set the encryption key
-//   // Important: It has to be a string with the length of 32
-//   mongocrypt.encryption.set(qkwospdfrmvnchxzasopejwksdfretvn);
-//   console.log("암호화 설정 완료!")
-// }
+
 
 
 /**
